@@ -76,6 +76,15 @@ body {
   font-family: var(--font-display);
 }
 
+/* Body copy — 16px / 20.8px / -0.48px / white (hero subtitle, feature cards, etc.) */
+.hf-body-sm {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.8px;
+  letter-spacing: -0.48px;
+  color: var(--hf-base);
+}
+
 /* Glass "::after" border line the Framer components draw on their pills/cards. */
 .hf-border-line::after {
   content: "";

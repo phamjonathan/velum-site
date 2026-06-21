@@ -54,7 +54,7 @@ export default function Section1Hero() {
 
           <motion.p
             {...rise(0.16)}
-            className="m-0 max-w-[280px] text-[15px] font-normal leading-[1.35] tracking-[-0.2px] text-[#55698c]"
+            className="m-0 max-w-[280px] hf-body-sm"
           >
             Startup &amp; Scaleup Executive Search and Talent Acquistion.
           </motion.p>

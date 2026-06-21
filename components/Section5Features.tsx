@@ -70,7 +70,7 @@ function FeatureCard({ f }: { f: Feature }) {
         <h6 className="m-0 text-[24px] font-normal leading-[28.8px] tracking-[-0.72px]">
           {f.heading}
         </h6>
-        <p className="m-0 text-[16px] font-normal leading-[20.8px] tracking-[-0.48px]">{f.body}</p>
+        <p className="m-0 hf-body-sm">{f.body}</p>
       </div>
       <div className="flex items-start leading-none">
         <span className="text-[32px] font-normal tracking-[-0.96px]">#</span>
