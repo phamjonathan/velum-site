@@ -86,13 +86,12 @@ export default function Section1Hero() {
         {/* bottom marquee — exact Lottie (placed executives + company logos) */}
         <HeroLottie className="absolute left-1/2 bottom-[44px] z-[2] h-[220px] w-screen -translate-x-1/2" />
 
-        {/* scroll to explore */}
-        <div className="absolute inset-x-0 bottom-[24px] z-[3] flex items-end justify-end px-6">
-          <div className="flex items-center gap-3 text-white">
-            <span className="text-[14px] leading-[18px] tracking-[-0.42px]">Scroll to Explore</span>
-          </div>
-        </div>
       </div>
+
+      {/* scroll to explore — aligned with Section2 "Our process" (bottom-6 right-10) */}
+      <span className="absolute bottom-6 right-10 z-[3] text-[14px] leading-[18px] tracking-[-0.42px] text-white">
+        Scroll to Explore
+      </span>
     </section>
   );
 }

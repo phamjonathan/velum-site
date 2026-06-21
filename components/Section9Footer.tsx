@@ -68,14 +68,14 @@ export default function Section9Footer() {
           <div className="mt-24 flex flex-col items-center gap-3 text-[14px] leading-[18px] tracking-[-0.42px] sm:flex-row sm:justify-between">
             <span className="text-[#bdbdbd]">All Right Reserved©</span>
             <div className="flex gap-6">
-              <a href="#" className="text-black hover:opacity-70">
+              <a href="#" className="text-[#6f8fc8] transition-opacity hover:opacity-70">
                 Privacy Policy
               </a>
-              <a href="#" className="text-black hover:opacity-70">
+              <a href="#" className="text-[#6f8fc8] transition-opacity hover:opacity-70">
                 Impressum
               </a>
             </div>
-            <span className="text-[#bdbdbd]">2025</span>
+            <span className="text-[#bdbdbd]">2026</span>
           </div>
         </div>
       </div>
