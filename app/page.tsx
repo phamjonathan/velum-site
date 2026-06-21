@@ -1,12 +1,30 @@
 import type { Metadata } from "next";
-import Deck from "@/components/Deck";
+import Section1Hero from "@/components/Section1Hero";
+import Section2SocialProof from "@/components/Section2SocialProof";
+import Section3About from "@/components/Section3About";
+import Section4SocialProof from "@/components/Section4SocialProof";
+import Section5Features from "@/components/Section5Features";
+import Section7Testimonials from "@/components/Section7Testimonials";
+import Section8Testimonials from "@/components/Section8Testimonials";
+import Section9Footer from "@/components/Section9Footer";
 
 export const metadata: Metadata = {
-  title: "Velum — Best OnlyFans Management & Agency",
+  title: "Highflyers — Startup & Scaleup Executive Search",
   description:
-    "Velum provides world-leading OnlyFans management & agency services to creators ready for real growth. We partner, execute, and drive results through personal brand growth.",
+    "Startup & Scaleup Executive Search and Talent Acquistion. Stop Searching. Start Growing.",
 };
 
 export default function Home() {
-  return <Deck />;
+  return (
+    <main className="w-full bg-white">
+      <Section1Hero />
+      <Section2SocialProof />
+      <Section3About />
+      <Section4SocialProof />
+      <Section5Features />
+      <Section7Testimonials />
+      <Section8Testimonials />
+      <Section9Footer />
+    </main>
+  );
 }

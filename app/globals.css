@@ -1,10 +1,122 @@
 @import "tailwindcss";
 
+/* ----------------------------------------------------------------------------
+   Highflyers — exact font files (from setup tokens)
+   "Inter Tight" is loaded robustly via next/font (full glyph coverage) and
+   exposed as --font-inter-tight. "Inter Display" is the Framer display cut.
+---------------------------------------------------------------------------- */
+@font-face {
+  font-family: "Inter Display";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/inter-display-400.woff2") format("woff2");
+}
+
 :root {
-  --font-inter-tight: "Inter Tight", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  --font-inter: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --hf-base: #ffffff;
+  --hf-text: #000000;
+  --hf-accent: #6f8fc8;
+  --hf-muted: #bdbdbd;
+  --hf-radius: 36px;
+  --font-display: "Inter Display", var(--font-inter-tight), "Inter Tight", sans-serif;
+}
+
+@theme inline {
+  --color-hf-accent: #6f8fc8;
+  --color-hf-muted: #bdbdbd;
+  --font-tight: var(--font-inter-tight), "Inter Tight", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
   margin: 0;
+  background: #ffffff;
+  color: #000000;
+  font-family: var(--font-inter-tight), "Inter Tight", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* The whole page is built on a 1280px design frame, centred on wider screens. */
+.hf-frame {
+  width: 1280px;
+  max-width: 100%;
+  margin-inline: auto;
+  position: relative;
+}
+
+/* Gradient-text fill used by the big Framer headlines (extraction reports the
+   #000 fallback; the live page paints this blue→light gradient over it). */
+.hf-grad {
+  background-image: linear-gradient(110deg, #5566cc 0%, #6f8fc8 45%, #a9c6e8 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.hf-grad-soft {
+  background-image: linear-gradient(110deg, #6f8fc8 0%, #8aa6d6 55%, #b3cbe9 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+/* Glass "::after" border line the Framer components draw on their pills/cards. */
+.hf-border-line::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  pointer-events: none;
+}
+
+/* ---- continuous loops ------------------------------------------------------ */
+@keyframes hf-marquee {
+  from { transform: translate3d(0, 0, 0); }
+  to   { transform: translate3d(-50%, 0, 0); }
+}
+.hf-marquee-track {
+  display: flex;
+  width: max-content;
+  animation: hf-marquee var(--hf-duration, 40s) linear infinite;
+}
+.hf-marquee-track.hf-paused:hover {
+  animation-play-state: paused;
+}
+
+/* Looping highlight sweep clipped to big display text (the "Clarity at Every
+   Step" wordmark). Pairs with background-size:200% + a gradient band. */
+@keyframes hf-shimmer {
+  0% { background-position: 200% center; }
+  100% { background-position: -100% center; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hf-marquee-track {
+    animation: none !important;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
 }

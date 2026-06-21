@@ -1,27 +1,23 @@
 import type { Metadata } from "next";
-import { Inter, Inter_Tight } from "next/font/google";
+import { Inter_Tight } from "next/font/google";
 import "./globals.css";
-
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-  weight: ["200", "300", "400", "500", "600", "700", "800"],
-});
+import SmoothScroll from "@/components/SmoothScroll";
+import Nav from "@/components/Nav";
 
 const interTight = Inter_Tight({
   subsets: ["latin"],
   variable: "--font-inter-tight",
-  weight: ["200", "300", "400", "500", "600", "700", "800"],
-  style: ["normal", "italic"],
+  weight: ["400", "500", "600"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
   title: {
-    default: "Velum — Best OnlyFans Management & Agency",
-    template: "%s — Velum",
+    default: "Highflyers — Startup & Scaleup Executive Search",
+    template: "%s — Highflyers",
   },
   description:
-    "Velum provides world-leading OnlyFans management & agency services to creators ready for real growth.",
+    "Startup & Scaleup Executive Search and Talent Acquistion. Stop Searching. Start Growing.",
 };
 
 export default function RootLayout({
@@ -30,8 +26,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${interTight.variable}`}>
-      <body>{children}</body>
+    <html lang="en" className={interTight.variable}>
+      <body>
+        <SmoothScroll />
+        <Nav />
+        {children}
+      </body>
     </html>
   );
 }
