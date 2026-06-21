@@ -207,7 +207,7 @@ export default function Section5Features() {
   const reduce = useReducedMotion();
 
   return (
-    <section className="relative w-full overflow-clip bg-white">
+    <section data-nav-theme="dark" className="relative w-full overflow-clip bg-white">
       {/* desktop: pinned scroll scene (static fallback when reduced motion) */}
       <div className="hidden lg:block">{reduce ? <StaticFeatures /> : <PinnedFeatures />}</div>
 

@@ -41,7 +41,7 @@ function TestimonialCard({ t }: { t: Testimonial }) {
 
 export default function Section8Testimonials() {
   return (
-    <section className="w-full overflow-hidden bg-white pt-16 pb-24 lg:pt-0 lg:pb-[120px]">
+    <section data-nav-theme="light" className="w-full overflow-hidden bg-white pt-16 pb-24 lg:pt-0 lg:pb-[120px]">
       <Marquee duration={60}>
         {testimonials.map((t) => (
           <TestimonialCard key={t.name} t={t} />

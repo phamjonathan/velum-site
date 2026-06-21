@@ -219,7 +219,7 @@ export default function Section4SocialProof() {
   const reduce = useReducedMotion();
 
   return (
-    <section className="relative w-full overflow-clip bg-white">
+    <section data-nav-theme="light" className="relative w-full overflow-clip bg-white">
       {/* desktop: pinned scroll scene (static fallback when reduced motion) */}
       <div className="hidden lg:block">
         {reduce ? (

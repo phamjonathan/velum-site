@@ -18,6 +18,10 @@ export default function SmoothScroll() {
       smoothWheel: true,
     });
 
+    lenis.on("scroll", () => {
+      window.dispatchEvent(new Event("velum-scroll"));
+    });
+
     let raf = 0;
     const loop = (time: number) => {
       lenis.raf(time);

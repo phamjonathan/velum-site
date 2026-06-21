@@ -18,7 +18,7 @@ const logos = [
 
 export default function Section2SocialProof() {
   return (
-    <section className="relative w-full overflow-hidden bg-white">
+    <section data-nav-theme="light" className="relative w-full overflow-hidden bg-white">
       <div className="mx-auto w-[1280px] max-w-full px-10 py-[160px] md:py-[200px] xl:py-[240px]">
         {/* oversized headline */}
         <Reveal>

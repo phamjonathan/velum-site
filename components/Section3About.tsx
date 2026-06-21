@@ -85,7 +85,7 @@ function ProcessCard({ card }: { card: Card }) {
 
 export default function Section3About() {
   return (
-    <section className="relative w-full overflow-clip bg-white">
+    <section data-nav-theme="light" className="relative w-full overflow-clip bg-white">
       <div className="mx-auto flex w-[1280px] max-w-full justify-center">
         {/* left intro (sticky on desktop) */}
         <aside className="sticky top-0 hidden h-screen w-[307px] shrink-0 flex-col justify-center px-6 lg:flex">

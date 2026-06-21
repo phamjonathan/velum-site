@@ -65,7 +65,7 @@ function FounderCard({ f }: { f: Founder }) {
 
 export default function AboutFounders() {
   return (
-    <section className="w-full bg-white px-6 pb-[80px] lg:pb-[120px]">
+    <section data-nav-theme="light" className="w-full bg-white px-6 pb-[80px] lg:pb-[120px]">
       <div className="mx-auto grid w-[1280px] max-w-full grid-cols-1 gap-6 lg:grid-cols-2">
         {founders.map((f) => (
           <FounderCard key={f.name} f={f} />

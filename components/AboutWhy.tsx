@@ -47,7 +47,7 @@ export default function AboutWhy() {
   const spring = reduce ? { duration: 0 } : { type: "spring" as const, stiffness: 260, damping: 34 };
 
   return (
-    <section className="relative w-full overflow-hidden bg-white">
+    <section data-nav-theme="light" className="relative w-full overflow-hidden bg-white">
       <img
         src={`${A}/24jW6oM4sy27LtVbtEqBBgYmgQ.webp`}
         alt=""

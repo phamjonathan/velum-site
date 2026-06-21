@@ -10,7 +10,7 @@ export default function Section7Testimonials() {
   const words = HEAD.split(" ");
 
   return (
-    <section className="relative flex w-full flex-col items-center overflow-hidden bg-white px-6 py-24 lg:py-[120px]">
+    <section data-nav-theme="light" className="relative flex w-full flex-col items-center overflow-hidden bg-white px-6 py-24 lg:py-[120px]">
       <motion.h3
         className="m-0 max-w-[760px] text-center text-[32px] font-normal leading-[1.2] tracking-[-1px] text-[#6b85af] sm:text-[40px] lg:text-[48px] lg:leading-[57.6px] lg:tracking-[-1.44px]"
         initial={reduce ? false : "hidden"}

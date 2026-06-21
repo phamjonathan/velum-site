@@ -86,7 +86,7 @@ export default function BlogContent() {
   const shown = active === "All" ? posts : posts.filter((p) => p.cat === active);
 
   return (
-    <section className="w-full bg-white pb-24 pt-[120px] lg:pb-[120px] lg:pt-[160px]">
+    <section data-nav-theme="light" className="w-full bg-white pb-24 pt-[120px] lg:pb-[120px] lg:pt-[160px]">
       <div className="px-6 lg:px-10">
         <div className="flex flex-col items-start justify-between gap-3 sm:flex-row sm:items-baseline">
           <h1 className="m-0 text-[40px] font-normal leading-[48px] tracking-[-1.2px] text-[#6b85af]">

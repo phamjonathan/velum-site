@@ -7,7 +7,7 @@ const socialLinks = ["LinkedIn", "X (Twitter)", "Instagram"];
 
 export default function Section9Footer() {
   return (
-    <footer className="w-full bg-white">
+    <footer data-nav-theme="light" className="w-full bg-white">
       {/* scenic CTA panel */}
       <div className="relative w-full overflow-hidden">
         <div className="absolute inset-0">

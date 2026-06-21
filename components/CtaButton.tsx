@@ -1,4 +1,5 @@
 import { CtaArrow } from "./icons";
+import type { NavTheme } from "@/hooks/useNavTheme";
 
 /**
  * The frosted "Get in Touch" pill (framer-12vx0dh) — exact computed styles &
@@ -9,7 +10,15 @@ import { CtaArrow } from "./icons";
  *  - on hover the circle's width animates 50px → full, so the lavender gradient
  *    sweeps across the whole pill; the arrow stays pinned right, text stays white
  */
-export default function CtaButton({ className = "" }: { className?: string }) {
+export default function CtaButton({
+  className = "",
+  theme = "dark",
+}: {
+  className?: string;
+  theme?: NavTheme;
+}) {
+  const light = theme === "light";
+
   return (
     <a
       href="#"
@@ -32,7 +41,11 @@ export default function CtaButton({ className = "" }: { className?: string }) {
         aria-hidden
       />
 
-      <span className="relative z-10 whitespace-nowrap text-[16px] leading-[20.8px] tracking-[-0.48px] text-white">
+      <span
+        className={`relative z-10 whitespace-nowrap text-[16px] leading-[20.8px] tracking-[-0.48px] transition-colors duration-300 group-hover:text-white ${
+          light ? "text-[#0f1730]" : "text-white"
+        }`}
+      >
         Get in Touch
       </span>
 

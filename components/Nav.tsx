@@ -1,6 +1,7 @@
 "use client";
 
 import { usePathname } from "next/navigation";
+import { useNavTheme } from "@/hooks/useNavTheme";
 import CtaButton from "./CtaButton";
 
 /**
@@ -11,6 +12,8 @@ import CtaButton from "./CtaButton";
  *  - link pill: bg rgba(108,155,193,0.24), radius 100, ::after 1px white/10
  *  - active link: rgba(255,255,255,0.2) highlight, white text
  *  - all text: Inter Tight 400 white; brand 18px/-0.54px, links 16px/-0.48px
+ *
+ * Text colour toggles via `[data-nav-theme]` on page sections (see useNavTheme).
  */
 const links = [
   { label: "Home", href: "/" },
@@ -20,6 +23,9 @@ const links = [
 
 export default function Nav() {
   const pathname = usePathname();
+  const theme = useNavTheme(pathname);
+  const light = theme === "light";
+  const textClass = light ? "text-[#0f1730]" : "text-white";
 
   return (
     <div className="pointer-events-none fixed inset-x-0 top-0 z-50 flex justify-center p-4">
@@ -32,22 +38,25 @@ export default function Nav() {
           WebkitBackdropFilter: "blur(8px)",
         }}
       >
-        <a href="/" className="pr-1 text-[18px] leading-[23.4px] tracking-[-0.54px] text-white">
+        <a
+          href="/"
+          className={`pr-1 text-[18px] leading-[23.4px] tracking-[-0.54px] transition-colors duration-300 ${textClass}`}
+        >
           highflyers.
         </a>
 
-        {/* blue link pill */}
         <nav
           className="relative flex items-center rounded-[100px] after:pointer-events-none after:absolute after:inset-0 after:rounded-[100px] after:border after:border-white/10"
           style={{ backgroundColor: "rgba(108,155,193,0.24)" }}
         >
           {links.map((l) => {
-            const active = l.href === "/" ? pathname === "/" : pathname.startsWith(l.href) && l.href !== "#";
+            const active =
+              l.href === "/" ? pathname === "/" : pathname.startsWith(l.href) && l.href !== "#";
             return (
               <a
                 key={l.label}
                 href={l.href}
-                className={`relative rounded-[100px] px-5 py-3 text-[16px] leading-[20.8px] tracking-[-0.48px] text-white transition-colors ${
+                className={`relative rounded-[100px] px-5 py-3 text-[16px] leading-[20.8px] tracking-[-0.48px] transition-colors duration-300 ${textClass} ${
                   active ? "" : "hover:bg-white/10"
                 }`}
                 style={active ? { backgroundColor: "rgba(255,255,255,0.2)" } : undefined}
@@ -58,7 +67,7 @@ export default function Nav() {
           })}
         </nav>
 
-        <CtaButton className="hidden sm:flex" />
+        <CtaButton className="hidden sm:flex" theme={theme} />
       </div>
     </div>
   );

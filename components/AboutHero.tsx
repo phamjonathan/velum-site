@@ -5,7 +5,7 @@ const A = "/assets";
  */
 export default function AboutHero() {
   return (
-    <section className="relative h-[100svh] w-full overflow-hidden bg-white">
+    <section data-nav-theme="dark" className="relative h-[100svh] w-full overflow-hidden bg-white">
       <img
         src={`${A}/HopPaAVul86SH5UOaRVQ7jFXvQA.webp`}
         alt=""

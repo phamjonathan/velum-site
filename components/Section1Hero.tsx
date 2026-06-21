@@ -20,7 +20,7 @@ export default function Section1Hero() {
         };
 
   return (
-    <section className="relative w-full overflow-hidden bg-white h-[100svh] min-h-[720px]">
+    <section data-nav-theme="dark" className="relative w-full overflow-hidden bg-white h-[100svh] min-h-[720px]">
       {/* sky + cloud background fills the viewport */}
       <div className="absolute inset-0">
         <img
