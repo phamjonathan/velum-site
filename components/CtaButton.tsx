@@ -21,7 +21,7 @@ export default function CtaButton({
 
   return (
     <a
-      href="#"
+      href="/get-in-touch"
       className={`group relative flex h-[50px] w-[169px] items-center overflow-clip rounded-[100px] pl-6 pr-16 transition-transform duration-300 hover:-translate-y-[1px] ${className}`}
       style={{
         backgroundImage:

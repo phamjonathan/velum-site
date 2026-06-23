@@ -26,6 +26,7 @@ export default function Nav() {
   const theme = useNavTheme(pathname);
   const light = theme === "light";
   const textClass = light ? "text-[#0f1730]" : "text-white";
+  const isContact = pathname.startsWith("/get-in-touch");
 
   return (
     <div className="pointer-events-none fixed inset-x-0 top-0 z-50 flex justify-center p-4">
@@ -45,29 +46,49 @@ export default function Nav() {
           highflyers.
         </a>
 
-        <nav
-          className="relative flex items-center rounded-[100px] after:pointer-events-none after:absolute after:inset-0 after:rounded-[100px] after:border after:border-white/10"
-          style={{ backgroundColor: "rgba(108,155,193,0.24)" }}
-        >
-          {links.map((l) => {
-            const active =
-              l.href === "/" ? pathname === "/" : pathname.startsWith(l.href) && l.href !== "#";
-            return (
-              <a
-                key={l.label}
-                href={l.href}
-                className={`relative rounded-[100px] px-5 py-3 text-[16px] leading-[20.8px] tracking-[-0.48px] transition-colors duration-300 ${textClass} ${
-                  active ? "" : "hover:bg-white/10"
-                }`}
-                style={active ? { backgroundColor: "rgba(255,255,255,0.2)" } : undefined}
-              >
-                {l.label}
-              </a>
-            );
-          })}
-        </nav>
+        {isContact ? (
+          <a
+            href="/"
+            className={`flex items-center gap-2 rounded-[100px] bg-white/20 px-5 py-3 text-[16px] leading-[20.8px] tracking-[-0.48px] transition-all duration-300 hover:-translate-y-[1px] hover:bg-white/30 ${textClass}`}
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M19 12H5M5 12l6-6M5 12l6 6"
+                stroke="currentColor"
+                strokeWidth="1.6"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+            Back
+          </a>
+        ) : (
+          <>
+            <nav
+              className="relative flex items-center rounded-[100px] after:pointer-events-none after:absolute after:inset-0 after:rounded-[100px] after:border after:border-white/10"
+              style={{ backgroundColor: "rgba(108,155,193,0.24)" }}
+            >
+              {links.map((l) => {
+                const active =
+                  l.href === "/" ? pathname === "/" : pathname.startsWith(l.href) && l.href !== "#";
+                return (
+                  <a
+                    key={l.label}
+                    href={l.href}
+                    className={`relative rounded-[100px] px-5 py-3 text-[16px] leading-[20.8px] tracking-[-0.48px] transition-colors duration-300 ${textClass} ${
+                      active ? "" : "hover:bg-white/10"
+                    }`}
+                    style={active ? { backgroundColor: "rgba(255,255,255,0.2)" } : undefined}
+                  >
+                    {l.label}
+                  </a>
+                );
+              })}
+            </nav>
 
-        <CtaButton className="hidden sm:flex" theme={theme} />
+            <CtaButton className="hidden sm:flex" theme={theme} />
+          </>
+        )}
       </div>
     </div>
   );

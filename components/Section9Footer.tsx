@@ -2,7 +2,11 @@ import CtaButton from "./CtaButton";
 
 const A = "/assets";
 
-const navLinks = ["Home", "About", "Blog"];
+const navLinks = [
+  { label: "Home", href: "/" },
+  { label: "About", href: "/about" },
+  { label: "Blog", href: "/blog" },
+];
 const socialLinks = ["LinkedIn", "X (Twitter)", "Instagram"];
 
 export default function Section9Footer() {
@@ -42,11 +46,11 @@ export default function Section9Footer() {
               <nav className="flex flex-col">
                 {navLinks.map((l) => (
                   <a
-                    key={l}
-                    href="#"
+                    key={l.label}
+                    href={l.href}
                     className="text-[40px] font-normal leading-[48px] tracking-[-1.2px] text-[#6f8fc8] transition-opacity hover:opacity-70"
                   >
-                    {l}
+                    {l.label}
                   </a>
                 ))}
               </nav>
