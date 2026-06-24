@@ -20,7 +20,7 @@ export default function About() {
       <AboutFounders />
       <AboutWhy />
 
-      <section data-nav-theme="light" className="w-full bg-white pt-[120px] lg:pt-[160px]">
+      <section data-nav-theme="light" className="w-full bg-white pt-[120px] pb-12 lg:pt-[160px] lg:pb-16">
         <h2 className="m-0 px-6 text-center text-[32px] font-normal leading-[1.2] tracking-[-1px] text-[#6b85af] sm:text-[40px] lg:text-[48px] lg:leading-[57.6px] lg:tracking-[-1.44px]">
           Testimonials
         </h2>
