@@ -9,7 +9,7 @@ import Section9Footer from "@/components/Section9Footer";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Redefining recruitment through boutique expertise and strategic advisory: smart, diverse, and fast.",
+    "Velum is a creator-management agency that turns OnlyFans pages into category-leading brands. Operators in the game since 2020.",
 };
 
 export default function About() {

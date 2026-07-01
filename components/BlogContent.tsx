@@ -4,33 +4,33 @@ import { useState } from "react";
 
 const A = "/assets";
 
-const categories = ["All", "Future", "Hiring", "Growth", "Culture"];
+const categories = ["All", "Growth", "Chatting", "Monetization", "Mindset"];
 
 type Post = { cat: string; date: string; title: string; img: string };
 
 const posts: Post[] = [
   {
-    cat: "Hiring",
+    cat: "Chatting",
     date: "September 21, 2025",
-    title: "Inside the Hiring Process at Hypergrowth Companies.",
+    title: "Inside a 24/7 Chatting Operation That Actually Converts.",
     img: `${A}/f9RiWoNpmlCMqVRIHz8l8wYfeI.jpg`,
   },
   {
-    cat: "Future",
+    cat: "Mindset",
     date: "September 14, 2025",
-    title: "Top Skills Startups Will Need in 2030.",
+    title: "What Separates a $10k Page From a $100k Page.",
     img: `${A}/2uTNEj5aTl2K3NJaEFWMbnrA.jpg`,
   },
   {
-    cat: "Growth",
+    cat: "Monetization",
     date: "August 28, 2025",
-    title: "How to Hire Executives in Just 35 Days.",
+    title: "How We Tripled a Creator's Net Revenue in 35 Days.",
     img: `${A}/aNsAT3jCvt4zglbWCUoFe33Q.jpg`,
   },
   {
-    cat: "Culture",
+    cat: "Growth",
     date: "August 5, 2025",
-    title: "Scaling from 50 to 2000+: Lessons from Startups.",
+    title: "Scaling From One Page to a Full Creator Roster.",
     img: `${A}/BYnxEV1zjYb9bhWh1IwBZ1ZoS60.jpg`,
   },
 ];

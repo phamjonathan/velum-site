@@ -3,7 +3,7 @@
 import { motion, useReducedMotion } from "motion/react";
 
 const EASE = [0.16, 1, 0.3, 1] as const;
-const HEAD = "Hiring Made Simple, Fast, and Clear.";
+const HEAD = "Growth Made Simple, Fast, and Clear.";
 
 export default function Section7Testimonials() {
   const reduce = useReducedMotion();

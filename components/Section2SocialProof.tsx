@@ -3,18 +3,30 @@
 import Marquee from "./Marquee";
 import { Reveal } from "./Reveal";
 
-const A = "/assets";
+const LOTTIE = "/lottie";
+const LOGO_HEIGHT = 40;
+const LOGO_HEIGHT_LARGE = 60;
+const LOGO_GAP = 56;
 
 const logos = [
-  { src: `${A}/91b55f60ae1704d6.png`, square: true },
-  { src: `${A}/73f846b5cd49dbe1.png`, square: true },
-  { src: `${A}/877a49fb6596307c.png`, square: true },
-  { src: `${A}/7b5a754945d28340.png`, square: true },
-  { src: `${A}/ff1e54559ba0acd2.png`, square: true },
-  { src: `${A}/ebfa9ca225bdad8f.png`, square: true },
-  { src: `${A}/739595eaf9bbd39a.png`, square: true },
-  { src: `${A}/4ed44ac05f14faf2.png`, square: false },
+  { src: `${LOTTIE}/logo-onlyfans.png`, alt: "OnlyFans", intrinsicW: 4096, intrinsicH: 1028 },
+  { src: `${LOTTIE}/logo-fansly.png`, alt: "Fansly", intrinsicW: 3840, intrinsicH: 1076 },
+  {
+    src: `${LOTTIE}/logo-fanvue.png`,
+    alt: "Fanvue",
+    intrinsicW: 690,
+    intrinsicH: 362,
+    large: true,
+  },
+  { src: `${LOTTIE}/logo-mym.png`, alt: "MYM", intrinsicW: 200, intrinsicH: 200, large: true },
+  { src: `${LOTTIE}/logo-subs.png`, alt: "Subs", intrinsicW: 447, intrinsicH: 447, large: true },
 ];
+
+function displaySize(intrinsicW: number, intrinsicH: number, large?: boolean) {
+  const height = large ? LOGO_HEIGHT_LARGE : LOGO_HEIGHT;
+  const width = Math.round((height * intrinsicW) / intrinsicH);
+  return { width, height };
+}
 
 export default function Section2SocialProof() {
   return (
@@ -23,8 +35,8 @@ export default function Section2SocialProof() {
         {/* oversized headline */}
         <Reveal>
           <h1 className="hf-grad m-0 max-w-[1200px] text-left text-[34px] font-normal leading-[1.1] tracking-[-1px] sm:text-[44px] lg:text-[56px] lg:tracking-[-1.6px] xl:text-[64px] xl:leading-[70.4px] xl:tracking-[-1.92px]">
-            At Highflyers, We Envision a Future Where Businesses Unlock Their Full Potential by
-            Building High-Performing Teams Ready for Tomorrow&rsquo;s Challenges.
+            We don&rsquo;t just manage creators &mdash; we build category-leading brands, with a
+            data-driven team that treats every account like a business with real targets.
           </h1>
         </Reveal>
 
@@ -38,22 +50,27 @@ export default function Section2SocialProof() {
 
           <div className="w-full max-w-[820px]">
             <Marquee duration={32}>
-              {logos.map((l, i) => (
-                <div
-                  key={i}
-                  className="flex h-[120px] w-[150px] shrink-0 items-center justify-center"
-                >
-                  <img
-                    src={l.src}
-                    alt=""
-                    className={
-                      l.square
-                        ? "h-[110px] w-auto object-contain"
-                        : "h-[34px] w-auto object-contain"
-                    }
-                  />
-                </div>
-              ))}
+              <div className="flex items-center">
+                {logos.map((logo) => {
+                  const { width, height } = displaySize(
+                    logo.intrinsicW,
+                    logo.intrinsicH,
+                    logo.large,
+                  );
+
+                  return (
+                    <img
+                      key={logo.src}
+                      src={logo.src}
+                      alt={logo.alt}
+                      width={width}
+                      height={height}
+                      className="shrink-0 object-contain"
+                      style={{ width, height, marginRight: LOGO_GAP }}
+                    />
+                  );
+                })}
+              </div>
             </Marquee>
           </div>
         </div>

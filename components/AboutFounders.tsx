@@ -10,18 +10,18 @@ type Founder = {
 
 const founders: Founder[] = [
   {
-    name: "Sophie",
-    role: "Managing Partner and Founder",
-    bio: "The market-facing recruiting expert with 2,000+ hires and deep executive search expertise. Sophie is instantly recognized by clients as a trusted face in the market, connecting talent and opportunities with precision.",
+    name: "Jonathan",
+    role: "Founder",
+    bio: "Operating in the industry since 2020, Jonathan built Velum to run creator pages like real businesses. He reads every account personally — no faceless sales floor — pairing hands-on market experience with a data-driven approach that has generated $50M+ for the creators Velum partners with.",
     bg: `${A}/nWdOiFT5Q147p2rHB8SATZmCjtE.webp`,
-    initial: "S",
+    initial: "J",
   },
   {
-    name: "Nico",
-    role: "Partner and Founder",
-    bio: "The strategic architect with a strong background in finance, process optimization, and digitalization. Nico ensures every strategy is data-driven, scalable, and built on a solid foundation — transforming complexity into clarity and vision into execution.",
+    name: "The Velum Team",
+    role: "Operations & Chatting",
+    bio: "A vetted team of operators covering every time zone, 24/7. They sound exactly like you, run the pricing, funnels, and PPV strategy behind the scenes, and track live earnings daily — the discreet, professional machine that keeps your DMs converting around the clock.",
     bg: `${A}/24yYgBfAVnE0mrzNW6YrVYlrzo.webp`,
-    initial: "N",
+    initial: "V",
   },
 ];
 

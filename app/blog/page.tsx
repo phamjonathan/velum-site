@@ -4,7 +4,7 @@ import Section9Footer from "@/components/Section9Footer";
 
 export const metadata: Metadata = {
   title: "Blog",
-  description: "Insights on hiring, future skills, growth, and culture from Highflyers.",
+  description: "Insights on chatting, monetization, growth, and creator mindset from Velum.",
 };
 
 export default function Blog() {

@@ -32,7 +32,7 @@ function Field({
   );
 }
 
-const sizes = ["1-100", "100-500", "500-1000", "1000-5000", "5000+"];
+const sizes = ["< $5k", "$5k–$20k", "$20k–$50k", "$50k–$100k", "$100k+"];
 
 export default function GetInTouchForm() {
   const [sent, setSent] = useState(false);
@@ -96,18 +96,18 @@ export default function GetInTouchForm() {
           </Field>
 
           <div className="grid grid-cols-2 gap-2">
-            <Field label="Company Name*">
+            <Field label="Creator / Page*">
               <input
-                name="Company Name"
+                name="Creator / Page"
                 type="text"
                 required
-                placeholder="Enter your company name"
+                placeholder="Your page or handle"
                 className={fieldClass}
                 style={fieldStyle}
               />
             </Field>
-            <Field label="Company Size*">
-              <Dropdown name="Company Size" required placeholder="Please chooze" options={sizes} />
+            <Field label="Monthly Revenue*">
+              <Dropdown name="Monthly Revenue" required placeholder="Please choose" options={sizes} />
             </Field>
           </div>
 

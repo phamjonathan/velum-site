@@ -20,27 +20,27 @@ type Feature = {
 
 const features: Feature[] = [
   {
-    label: "{ Reporting Access. }",
-    heading: "Access to Real-Time Reporting Dashboard for Hiring Team.",
-    body: "Overview of candidate status incl. sourced candidates, outreached candidates and interview stages.",
+    label: "{ Dedicated Chatting. }",
+    heading: "24/7 trained chatters across every time zone.",
+    body: "Your DMs covered around the clock by vetted operators who sound exactly like you.",
     num: "01",
   },
   {
-    label: "{ Candidate Prioritization. }",
-    heading: "Rate & Prioritize Candidates, Provide Feedback & View Assessments",
-    body: "Enable the ability to rate and prioritize candidates, provide feedback, and view assessments within the dashboard.",
+    label: "{ Revenue Reporting. }",
+    heading: "Live earnings dashboard, updated daily.",
+    body: "Track gross sales, top spenders and PPV performance in real time — no guesswork.",
     num: "02",
   },
   {
-    label: "{ Market Insights. }",
-    heading: "Gain Real-Time Insights into Target Companies and Compensation Data",
-    body: "Overview and insights into target companies and access compensation data reflecting industry and role-specific trends.",
+    label: "{ Fan Monetization. }",
+    heading: "Long-term spender development, not quick cash.",
+    body: "Relationship-led scripting that turns one-time buyers into recurring whales.",
     num: "03",
   },
   {
-    label: "{ Status Tracking. }",
-    heading: "View Candidate Status and Activity Details",
-    body: "Easily view candidate status and detailed activity information through the reporting dashboard.",
+    label: "{ Content & Scripts. }",
+    heading: "Done-for-you guides, captions & sales scripts.",
+    body: "Proven playbooks tuned to your niche, so every message converts.",
     num: "04",
   },
 ];

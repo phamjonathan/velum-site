@@ -13,11 +13,11 @@ const interTight = Inter_Tight({
 
 export const metadata: Metadata = {
   title: {
-    default: "Highflyers — Startup & Scaleup Executive Search",
-    template: "%s — Highflyers",
+    default: "Velum — Best OnlyFans Management & Agency",
+    template: "%s — Velum",
   },
   description:
-    "Startup & Scaleup Executive Search and Talent Acquistion. Stop Searching. Start Growing.",
+    "Velum provides world-leading OnlyFans management & agency services to creators ready for real growth. We partner, execute, and drive results through personal brand growth.",
 };
 
 export default function RootLayout({

@@ -56,7 +56,7 @@ export default function Section1Hero() {
             {...rise(0.16)}
             className="m-0 max-w-[280px] hf-body-sm"
           >
-            Startup &amp; Scaleup Executive Search and Talent Acquistion.
+            Velum partners with creators ready for real growth &mdash; we manage, execute, and build category-leading brands.
           </motion.p>
 
           {/* hero CTA: envelope · divider · pill */}

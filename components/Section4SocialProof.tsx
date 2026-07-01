@@ -61,19 +61,19 @@ function StatBlockStatic() {
         className="m-0 text-[48px] font-normal leading-[57.6px] tracking-[-1.44px]"
         style={{ color: `rgb(${ACCENT})` }}
       >
-        35 Days Average time-to-fill.
+        $50M+ Generated for our clients.
       </h3>
       <h5
         className="m-0 text-[32px] font-normal leading-[38.4px] tracking-[-0.96px]"
         style={{ color: `rgba(${ACCENT}, 0.24)` }}
       >
-        100% Results delivered.
+        75% PPV purchase rate.
       </h5>
       <h6
         className="m-0 text-[24px] font-normal leading-[28.8px] tracking-[-0.72px]"
         style={{ color: `rgba(${ACCENT}, 0.24)` }}
       >
-        85+ Executives placed at Global Companies.
+        24/7 Chatting coverage, every time zone.
       </h6>
     </div>
   );
@@ -101,7 +101,7 @@ function ResultsCard() {
   );
 }
 
-/* lower-left — "Proven with / Global Leaders" */
+/* lower-left — "Proven with / Top Creators" */
 function ProvenCard() {
   return (
     <div className="rounded-[26px] bg-white p-1.5 shadow-[0_20px_50px_rgba(60,90,130,0.12)]">
@@ -114,14 +114,14 @@ function ProvenCard() {
         <div className="absolute inset-0 bg-black/10" />
         <div className="relative text-center text-[16px] font-normal leading-[20.8px] tracking-[-0.48px] text-white">
           <p className="m-0">Proven with</p>
-          <p className="m-0">Global Leaders</p>
+          <p className="m-0">Top Creators</p>
         </div>
       </div>
     </div>
   );
 }
 
-/* top-right — "Talent / Shaping the Future" */
+/* top-right — "Growth / Around the Clock" */
 function TalentCard() {
   return (
     <div className="rounded-[36px] bg-black p-1.5">
@@ -144,10 +144,10 @@ function TalentCard() {
         </span>
         <div className="flex flex-col items-center gap-1 text-center">
           <span className="text-[32px] font-normal leading-[38.4px] tracking-[-0.96px] text-white">
-            Talent
+            Growth
           </span>
           <span className="text-[14px] font-normal leading-[18.2px] tracking-[-0.42px] text-white">
-            Shaping the Future
+            Around the Clock
           </span>
         </div>
       </div>
@@ -183,13 +183,13 @@ function PinnedScene() {
         {/* centred stat block */}
         <div className="absolute inset-0 flex flex-col items-center justify-center gap-6">
           <StatLine act={act} index={0}>
-            35 Days Average time-to-fill.
+            $50M+ Generated for our clients.
           </StatLine>
           <StatLine act={act} index={1}>
-            100% Results delivered.
+            75% PPV purchase rate.
           </StatLine>
           <StatLine act={act} index={2}>
-            85+ Executives placed at Global Companies.
+            24/7 Chatting coverage, every time zone.
           </StatLine>
         </div>
 

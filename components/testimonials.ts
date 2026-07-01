@@ -11,53 +11,50 @@ export type Testimonial = {
 
 export const testimonials: Testimonial[] = [
   {
-    name: "Felix Ohswald",
-    role: "CEO & Founder, GoStudent",
+    name: "Aura",
+    role: "Creator · Top 0.5% OnlyFans",
     avatar: `${A}/12f172cd6a6e33fb.png`,
     quote:
-      "“The most important part of growing your business is establishing a foundation of trustworthy, competent employees…”",
-    body: "Even if you are hiring quickly, it’s vital that every new hire embodies the company culture and ethos you want to maintain. Sophie was one of the main drivers of our company’s growth and managed to build an unmatched, top-tier team. If you ever have the chance to work with Highflyers – do it!",
-    logo: `${A}/2ed0dfe2d3ea0220.png`,
+      "“Velum runs my page like a real business — my net revenue tripled in a single quarter…”",
+    body: "The chatting team sounds exactly like me, my DMs are covered around the clock, and I finally see live numbers instead of guessing. I just focus on content now — they handle the machine behind it. If you're serious about growth, work with Velum.",
   },
   {
-    name: "Benedict Kurz",
-    role: "CEO & Co-Founder Knowunity",
+    name: "Lumière",
+    role: "Creator & Model",
     avatar: `${A}/12471f895ddbbdb1.png`,
     quote:
-      "“We were able to fill several of our most critical key positions with top-tier talent...”",
-    body: "What impressed us most was the unique combination of speed, precision, and the team’s deep market expertise. Every candidate introduced was not only outstanding in terms of skills but also aligned with our company culture and long-term vision.",
+      "“I stopped leaving money on the table the day I signed with Velum…”",
+    body: "They audited my pricing and funnels and rebuilt my PPV strategy from scratch. Same content, far more revenue — and the spender development turned one-time buyers into fans who actually stick around.",
   },
   {
-    name: "Laurent Martinot",
-    role: "CEO & Founder",
+    name: "Nova",
+    role: "Creator · 1.2M+ followers",
     avatar: `${A}/a8900c96b0b1f1af.png`,
     quote:
-      "“If recruiting were an Olympic sport, Highflyers would already have several gold medals…”",
-    body: "Efficient, sharp, and always in a good mood — Sophie somehow manages to make job talks feel like coffee with a friend (but with results!).",
-    logo: `${A}/156459ed87cc9b3a.webp`,
+      "“The speed and discretion are unreal. Vetted operators, in my voice, 24/7…”",
+    body: "What impressed me most was how quiet and professional the whole thing is. My privacy and brand come first, the team is data-driven, and my fans have no idea anything changed except that I reply faster.",
   },
   {
-    name: "Ali Mahlodji",
-    role: "CEO & Founder futureOne",
+    name: "Eden Co.",
+    role: "Creator Collective",
     avatar: `${A}/56f8dc966aa6fe08.png`,
     quote:
-      "“Our experience with this recruitment process was nothing short of extraordinary…”",
-    body: "The speed and efficiency with which our new team member was identified and onboarded were beyond our expectations. The new hire was not just a fit skill-wise but also melded perfectly with the culture at futureOne. We highly recommend their services to anyone looking for a swift, effective, and culturally aligned recruitment solution.",
+      "“We manage several pages and Velum scaled all of them without dropping the ball…”",
+    body: "Every account is treated like its own business with real targets. Done-for-you scripts, live dashboards, and a team that optimizes daily — the month-over-month growth speaks for itself.",
   },
   {
-    name: "Sebastian Haupt",
-    role: "CEO & Founder, Sell&Stay",
+    name: "Halcyon",
+    role: "Creator Studio",
     avatar: `${A}/f3fa58a41501a9ec.jpg`,
     quote:
-      "“Outstanding recruiting services. We’ve already partnered with Highflyers for several key positions across our Family Office...”",
-    body: "And the results have been excellent every time. Most recently, we successfully hired our new Managing Director through their support – a perfect match in both expertise and cultural fit. We couldn’t be happier with the outcome and fully recommend Highflyers for critical executive hires.",
-    logo: `${A}/5ba6e57aca0dcf3d.png`,
+      "“Velum feels like a partner, not a vendor. A founder actually reads every account…”",
+    body: "No faceless sales floor, no bots — just operators who know the niche. They took us from leaking revenue to a 24/7 growth machine in weeks, and the reporting keeps everyone honest.",
   },
   {
-    name: "Vlado Stanic",
-    role: "CEO & Founder, OnZero",
+    name: "Velvet",
+    role: "Creator · Top 1%",
     avatar: `${A}/18d9fa8d93100075.png`,
-    quote: "“Highflyers delivered outstanding recruitment support…”",
-    body: "Achieving swift, diverse, and highly efficient results, their insightful consultations were instrumental in pinpointing the ideal candidates for our crucial roles. The ability to understand our unique needs and match them with top-tier talent was impressive. I wholeheartedly recommend their services to any organization seeking to build a strong, skilled team.",
+    quote: "“Relationship-led, not quick cash. That's the difference…”",
+    body: "The team develops long-term spenders instead of burning fans out. My recurring revenue is the highest it's ever been, and I finally have time back to just create.",
   },
 ];

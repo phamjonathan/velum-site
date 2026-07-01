@@ -9,9 +9,9 @@ import Section8Testimonials from "@/components/Section8Testimonials";
 import Section9Footer from "@/components/Section9Footer";
 
 export const metadata: Metadata = {
-  title: "Highflyers — Startup & Scaleup Executive Search",
+  title: "Velum — Best OnlyFans Management & Agency",
   description:
-    "Startup & Scaleup Executive Search and Talent Acquistion. Stop Searching. Start Growing.",
+    "World-leading OnlyFans management & agency for creators ready for real growth. Stop Searching. Start Growing.",
 };
 
 export default function Home() {

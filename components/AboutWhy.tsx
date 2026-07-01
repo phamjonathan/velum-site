@@ -8,16 +8,16 @@ const A = "/assets";
 type Value = { n: string; title: string; body: string };
 
 const values: Value[] = [
-  { n: "01", title: "Founder-Market-Fit", body: "Both founders scaled a unicorn team to 2000+ in 2 years, with backgrounds in recruiting, finance, digital transformation, and daily AI use." },
-  { n: "02", title: "Future Skills", body: "We hire not only for today but anticipate tomorrow’s needs — with expertise in AI, digital transformation, and future-of-work trends." },
-  { n: "03", title: "Digital-First", body: "Built on cloud-based, AI-enhanced infrastructure, our process is automated, transparent, and scalable." },
-  { n: "04", title: "Unique Positioning", body: "We combine executive search expertise with AI talent advisory — bridging today’s needs with tomorrow’s workforce." },
-  { n: "05", title: "Proven Excellence", body: "Track record in 20+ countries, 2,000+ hires, including 80+ senior and C-level placements across Europe and the Americas." },
-  { n: "06", title: "Smart & Fast", body: "Average hire in 35 days — filling roles quickly without compromising quality." },
-  { n: "07", title: "Growth Expertise", body: "Recruitment strategies tailored for rapid international growth, backed by real unicorn experience." },
-  { n: "08", title: "Diversity & Inclusion", body: "We ensure diverse talent pools, valuing different perspectives and cultural fit." },
-  { n: "09", title: "Cultural Fit", body: "We mirror our clients’ spirit — entrepreneurial, agile, transparent, and data-driven." },
-  { n: "10", title: "Cost-Effective", body: "Top recruitment performance with strong price-to-value ratio." },
+  { n: "01", title: "24/7 Chatting", body: "Vetted operators across every time zone who sound exactly like you — your DMs are never left cold." },
+  { n: "02", title: "Data-Driven", body: "Live earnings dashboards, PPV performance, and spender development tracked daily. No guesswork." },
+  { n: "03", title: "Discreet & Professional", body: "Your privacy and brand come first. We operate quietly, securely, and entirely in your voice." },
+  { n: "04", title: "Built to Scale", body: "Relationship-led monetization that turns one-time buyers into long-term, recurring revenue." },
+  { n: "05", title: "Operators Since 2020", body: "In the game from day one, with $50M+ generated for the creators we partner with." },
+  { n: "06", title: "Fast Onboarding", body: "From first call to full-scale chatting in days — we find where revenue is leaking and fix it fast." },
+  { n: "07", title: "Done-For-You Content", body: "Guides, captions, and sales scripts tuned to your niche, so every message converts." },
+  { n: "08", title: "Long-Term Spenders", body: "We develop recurring whales, not quick cash — building fans who stay and keep spending." },
+  { n: "09", title: "Founder-Led", body: "A founder reads every account. You get real operators, not a faceless sales floor." },
+  { n: "10", title: "Real Targets", body: "We treat every account like a business with real revenue goals, not a side hustle." },
 ];
 
 const CARD_W = 300;
@@ -56,7 +56,7 @@ export default function AboutWhy() {
 
       <div className="relative flex flex-col items-center gap-12 py-[120px] lg:gap-16 lg:py-[160px]">
         <h2 className="m-0 px-6 text-center text-[32px] font-normal leading-[1.2] tracking-[-1px] text-[#6b85af] sm:text-[40px] lg:text-[48px] lg:leading-[57.6px] lg:tracking-[-1.44px]">
-          Why highflyers?
+          Why velum?
         </h2>
 
         {/* centered carousel */}

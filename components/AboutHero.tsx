@@ -22,20 +22,20 @@ export default function AboutHero() {
       />
 
       <p className="absolute inset-x-0 top-[22%] m-0 text-center text-[16px] leading-[20.8px] tracking-[-0.48px] text-white">
-        About us
+        About Velum
       </p>
 
       <h1 className="absolute left-1/2 top-1/2 m-0 max-w-[780px] -translate-x-1/2 -translate-y-1/2 px-6 text-center text-[24px] font-normal leading-[1.2] tracking-[-0.8px] text-white sm:text-[28px] lg:text-[32px] lg:leading-[38.4px] lg:tracking-[-0.96px]">
-        Startup &amp; Scaleup Executive Search and Talent Acquistion. AI Talent Advisory.
+        Operators in the game since 2020.
       </h1>
 
       <div className="absolute inset-x-0 bottom-[22%] flex flex-col items-center gap-5 px-6 text-center">
         <h2 className="m-0 text-[40px] font-normal leading-none tracking-[-1.2px] text-white sm:text-[44px] lg:text-[48px] lg:leading-[57.6px] lg:tracking-[-1.44px]">
-          highflyers.
+          velum.
         </h2>
         <p className="m-0 max-w-[620px] text-[16px] leading-[20.8px] tracking-[-0.48px] text-white">
-          Redefining recruitment through boutique expertise and strategic advisory: smart,
-          diverse, and fast.
+          Founded by Jonathan and active in the industry from day one — a trusted partner to
+          leading agencies and creators around the world.
         </p>
       </div>
 

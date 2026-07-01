@@ -26,7 +26,7 @@ export default function Section9Footer() {
             Stop Searching. Start Growing.
           </p>
           <h2 className="m-0 select-none whitespace-nowrap text-[64px] font-normal leading-none tracking-[-2px] text-white sm:text-[110px] lg:text-[200px] lg:leading-[240px] lg:tracking-[-6px]">
-            highflyers.
+            velum.
           </h2>
           <CtaButton />
         </div>
@@ -38,7 +38,7 @@ export default function Section9Footer() {
           <div className="flex flex-col gap-16 md:flex-row md:justify-between">
             {/* brand */}
             <div className="text-[40px] font-normal leading-[48px] tracking-[-1.2px] text-[#5a7ab5]">
-              highflyers.
+              velum.
             </div>
 
             {/* nav + social */}

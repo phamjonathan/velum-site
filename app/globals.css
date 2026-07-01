@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 /* ----------------------------------------------------------------------------
-   Highflyers — exact font files (from setup tokens)
+   Velum — exact font files (from setup tokens)
    "Inter Tight" is loaded robustly via next/font (full glyph coverage) and
    exposed as --font-inter-tight. "Inter Display" is the Framer display cut.
 ---------------------------------------------------------------------------- */

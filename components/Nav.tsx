@@ -6,7 +6,7 @@ import CtaButton from "./CtaButton";
 
 /**
  * Fixed nav chrome (framer-1y0ydn8-container / framer-390s2b). Styles below are
- * the exact computed values read from the live highflyers.ai DOM:
+ * the exact computed values read from the live velum.ai DOM:
  *  - outer pill: bg rgba(255,255,255,0.08), opacity 0.8, inset white/24 glow,
  *    blur(8px), radius 100px, padding 6/6/6/24, gap 16
  *  - link pill: bg rgba(108,155,193,0.24), radius 100, ::after 1px white/10
@@ -43,7 +43,7 @@ export default function Nav() {
           href="/"
           className={`pr-1 text-[18px] leading-[23.4px] tracking-[-0.54px] transition-colors duration-300 ${textClass}`}
         >
-          highflyers.
+          velum.
         </a>
 
         {isContact ? (

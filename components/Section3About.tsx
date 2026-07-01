@@ -15,33 +15,33 @@ type Card = {
 
 const cards: Card[] = [
   {
-    label: "{ 1 Day. }",
-    title: "Kick-off Briefing",
-    body: "We closely work with your team to understand your business, industry, and role requirements, including collecting stakeholder input, defining the role's focus, and clarifying compensation details.",
+    label: "{ Day 1. }",
+    title: "Discovery Call",
+    body: "We start with a call to understand your account, your goals, and exactly where revenue is leaking today.",
     mockup: `${A}/05a71489ac9a094b.png`,
     glass: `${A}/7f5349c5c0e8ad8c.png`,
     gradient: "linear-gradient(155deg, #b4cfe9 0%, #d8e5f1 100%)",
   },
   {
-    label: "{ 1–3 Day. }",
-    title: "Job Scorecard & Candidate Presentation",
-    body: "We help you identify the specific skills, qualifications and assessments required for your goals. We conduct outreach, interviews and references to evaluate candidates thoroughly, and recruit the ideal talent to drive your success.",
+    label: "{ 1–3 Days. }",
+    title: "Account Audit",
+    body: "A deep audit of your chatting, pricing, and funnels to surface the biggest, fastest growth levers.",
     mockup: `${A}/82c8e9f6ad1d7c5c.png`,
     glass: `${A}/9a00d96c278c1c77.png`,
     gradient: "linear-gradient(155deg, #6f8fc8 0%, #9eb9da 100%)",
   },
   {
-    label: "{ 2–5 Week. }",
-    title: "Regular Updates",
-    body: "Communication is key in staying focused and aligned throughout the search. Together, we decide on an update schedule that works best for you, to help you stay informed on the search while you focus on your core business.",
+    label: "{ Week 1. }",
+    title: "Custom Growth Plan",
+    body: "A tailored playbook — scripts, schedules, and PPV strategy built around your fans and your niche.",
     mockup: `${A}/804e63c4ef928611.png`,
     glass: `${A}/668cd26a0c4f68a5.png`,
     gradient: "linear-gradient(155deg, #9aa6b0 0%, #c7ced5 100%)",
   },
   {
-    label: "{ 1–5 Week. }",
-    title: "Finalizing the Role",
-    body: "From our experience, a successful hiring process usually takes about 35 days to conclude.",
+    label: "{ Ongoing. }",
+    title: "Scale With Velum",
+    body: "Our team runs 24/7 chatting and continuous optimization while you watch revenue climb, month over month.",
     mockup: `${A}/359572b8c4d0a129.png`,
     glass: `${A}/7cf1ebec818b4d7d.png`,
     gradient: "linear-gradient(155deg, #6f8fc8 0%, #aac4e2 100%)",
@@ -93,7 +93,7 @@ export default function Section3About() {
             4 Simple Steps
           </p>
           <h5 className="mt-6 m-0 text-[32px] font-normal leading-[38.4px] tracking-[-0.96px] text-black">
-            Your Roadmap to Building the Future with the Best Talent.
+            Your Roadmap to Scaling with Velum.
           </h5>
         </aside>
 
@@ -105,7 +105,7 @@ export default function Section3About() {
               4 Simple Steps
             </p>
             <h5 className="mt-4 m-0 text-[28px] font-normal leading-[1.2] tracking-[-0.96px] text-black">
-              Your Roadmap to Building the Future with the Best Talent.
+              Your Roadmap to Scaling with Velum.
             </h5>
           </div>
 
@@ -115,8 +115,8 @@ export default function Section3About() {
 
           {/* mobile closing paragraph */}
           <p className="mt-6 w-full max-w-[400px] text-left text-[16px] leading-[20.8px] tracking-[-0.48px] text-[#bdbdbd] lg:hidden">
-            We guide you through every step — from defining your strategy to securing top
-            professionals who will shape your success.
+            From the first call to full-scale chatting — here&rsquo;s exactly how we take your
+            account from leaking revenue to a 24/7 growth machine.
           </p>
         </div>
 
@@ -124,8 +124,8 @@ export default function Section3About() {
         <aside className="relative hidden w-[307px] shrink-0 lg:block">
           <div className="sticky top-0 flex h-screen flex-col justify-center px-6">
             <p className="m-0 text-right text-[16px] leading-[20.8px] tracking-[-0.48px] text-[#bdbdbd]">
-              We guide you through every step — from defining your strategy to securing top
-              professionals who will shape your success.
+              From the first call to full-scale chatting — here&rsquo;s exactly how we take your
+              account from leaking revenue to a 24/7 growth machine.
             </p>
           </div>
         </aside>
