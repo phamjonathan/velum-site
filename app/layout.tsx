@@ -18,6 +18,9 @@ export const metadata: Metadata = {
   },
   description:
     "Velum provides world-leading OnlyFans management & agency services to creators ready for real growth. We partner, execute, and drive results through personal brand growth.",
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({
